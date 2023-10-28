@@ -7,13 +7,12 @@ body {
     /* border: thin solid black; */
     width: 40%;
     height: 70vh;
-
 }
 
 @media only screen and (max-width: 700px) {
     .container {
         width: 100%;
-        height: 95vh;
+        height: 85vh;
     }
 }
 
@@ -134,17 +133,22 @@ body {
     font-size: 14px;
     width: 100%;
     text-wrap: wrap;
+    resize: none;
 }
 
 .actions__section {
+    padding: 0 5px;
     flex: 1;
     /* border: thin solid green; */
     border-radius: 5px;
     background-color: #d2e3c84e;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
-.actions__section>p {
-    /* text-align: center; */
+.send__btn {
+    height: 1.4em;
+    width: 1.2em;
+    /* border: thin solid green; */
 }
