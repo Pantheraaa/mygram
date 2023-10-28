@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    /* border: thin solid black; */
+    width: 40%;
+    height: 70vh;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+        height: 95vh;
+    }
+}
+
+.chat__header {
+    border: thin solid;
+    padding: .6rem 1rem;
+    /* margin-left: 1rem; */
+    /* border: thin solid tomato; */
+    border-radius: 10px 10px 0 0;
+    background-color: #113946;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.chat__header>img {
+    /* border: thin solid; */
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.chat__section>.chat__header>h5 {
+    color: #ED7D31;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.chat__section,
+.msg__section,
+.actions__section {}
+
+.chat__section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 12px; */
+}
+
+.msg__section {
+    flex: 13;
+    padding: 5px;
+    overflow-y: scroll;
+    /* border: thin solid red; */
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-sizing: content-box; */
+}
+
+.msg__section::-webkit-scrollbar {
+    display: none;
+}
+
+.msg_box {
+    /* border: thin solid; */
+    width: fit-content;
+    padding: 2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.outgoing__msg {
+    align-self: flex-end;
+}
+
+.incoming__msg {
+    align-self: flex-start;
+}
+
+.msg_box>p {
+    margin: 0;
+    padding: 0;
+    /* border: thin solid green; */
+}
+
+.msg_box>.name {
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.outgoing__msg>.name {
+    text-align: right;
+}
+
+.incoming__msg>.name {
+    text-align: left;
+}
+
+.msg_box>.msg {
+    background-color: #d2e3c84e;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px 1rem;
+    text-wrap: wrap;
+    max-width: 25rem;
+    border-radius: 15px;
+}
+
+.msg__type__box {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    height: 50%;
+    margin: 0;
+    /* border: thin solid black; */
+    padding: 2px 5px;
+    font-size: 14px;
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.actions__section {
+    flex: 1;
+    /* border: thin solid green; */
+    border-radius: 5px;
+    background-color: #d2e3c84e;
+    display: flex;
+    align-items: center;
+}
+
+.actions__section>p {
+    /* text-align: center; */
+}
